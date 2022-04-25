@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test</title>
+</head>
+
+<body>
+	<p th:text="'Hello ' +     ${nom}">
+		Test
+	</p>
+	<p th:text="'Date: ' +     ${#dates.createToday()}">
+		Test
+	</p>
+
+	<div th:object="${projet}">
+		<span th:text="*{description}">...</span>
+	</div>
+	<a th:href="@{/projets}">Chemin avec th:href</a>
+	<a href="/projets">Sans th:href</a>
+	
+	<div>
+<a th:href="@{https://www.google.com/search(q=${projet.idProjet},tbs=${projet.description},lr=${tache.idTache})}">Recherche: Thymeleaf</a>
+<a th:href="@{https://www.google.com/search(q='thymeleaf',tbs='qdr:y',lr=lang_fr)}">Recherche: Thymeleaf</a>
+</div>
+<div>
+	<a th:href="@{/projets/{idP}/tache/{idT} (idP=${projet.idProjet},idT=${tache.idTache})}">Ajouter Tache</a>
+</div>
+
+
+</body>
+
+</html>
