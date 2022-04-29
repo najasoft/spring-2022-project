@@ -28,8 +28,8 @@ public class ProjetController {
 	 */
 	@GetMapping
 	public ModelAndView liste() {
-		ModelAndView m = new ModelAndView("projets");
-		m.addObject("projets/projets", projetService.lesProjets());
+		ModelAndView m = new ModelAndView("projets/projets");
+		m.addObject("projets", projetService.lesProjets());
 		return m;
 	}
 
