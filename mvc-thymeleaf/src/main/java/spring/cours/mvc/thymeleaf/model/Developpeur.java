@@ -1,7 +1,9 @@
 package spring.cours.mvc.thymeleaf.model;
 
+import java.time.LocalDate;
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,38 +11,69 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+
 
 @Entity
 public class Developpeur {
-	
-	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idDev;
+	@NotBlank
+	@Column(nullable = false)
 	private String nom;
-	@ManyToMany
-	@JoinTable(name="taches_dev",
-	joinColumns = @JoinColumn(name="dev_id"),
-	inverseJoinColumns = @JoinColumn(name="tache_id")
-)
-	List<Tache> taches;
+
+	@Email
+	@Column(unique = true)
+	private String email;
+	private LocalDate dateEmbauche;
 	
+	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	
+	@ManyToMany
+	@JoinTable(name = "taches_dev", joinColumns = @JoinColumn(name = "dev_id"), inverseJoinColumns = @JoinColumn(name = "tache_id"))
+	List<Tache> taches;
+
 	public int getIdDev() {
 		return idDev;
 	}
+
 	public void setIdDev(int idDev) {
 		this.idDev = idDev;
 	}
+
 	public String getNom() {
 		return nom;
 	}
+
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
+
 	public List<Tache> getTaches() {
 		return taches;
 	}
+
 	public void setTaches(List<Tache> taches) {
 		this.taches = taches;
 	}
 
-	
+	public LocalDate getDateEmbauche() {
+		return dateEmbauche;
+	}
+
+	public void setDateEmbauche(LocalDate dateEmbauche) {
+		this.dateEmbauche = dateEmbauche;
+	}
+
 }

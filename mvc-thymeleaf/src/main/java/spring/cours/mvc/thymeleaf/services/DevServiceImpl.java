@@ -17,6 +17,7 @@ public class DevServiceImpl implements DevService {
 	@Override
 	public void ajouter(Developpeur dev) {
 		devRepository.save(dev);
+	
 	}
 
 	@Override
@@ -33,9 +34,17 @@ public class DevServiceImpl implements DevService {
 
 	@Override
 	public void modifier(Developpeur dev) {
-		Developpeur d = devRepository.getById(dev.getIdDev());
-		if (d != null)
+		
+		if (devRepository.existsById(dev.getIdDev())) {
+			Developpeur d = devRepository.getById(dev.getIdDev());
+			d.setNom(dev.getNom());
+			d.setDateEmbauche(dev.getDateEmbauche());
+			d.setEmail(dev.getEmail());
 			devRepository.save(d);
+			
+		}
+		else
+			devRepository.save(dev);
 
 	}
 

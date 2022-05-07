@@ -6,16 +6,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import spring.cours.mvc.thymeleaf.model.Projet;
+import spring.cours.mvc.thymeleaf.model.ProjetDev;
 import spring.cours.mvc.thymeleaf.model.Tache;
 import spring.cours.mvc.thymeleaf.repository.ProjetRepository;
+import spring.cours.mvc.thymeleaf.repository.TacheRepository;
 
 @Service
 public class ProjetServiceImpl implements ProjetService {
 	@Autowired
 	ProjetRepository projetRepository;
-	
-
-
+	@Autowired
+	TacheRepository tacheRepository;
 
 	@Override
 	public List<Projet> lesProjets() {
@@ -28,10 +29,11 @@ public class ProjetServiceImpl implements ProjetService {
 		projetRepository.deleteById(idProjet);
 
 	}
+
 	@Override
 	public void ajouter(Projet projet) {
 		projetRepository.save(projet);
-		
+
 	}
 
 	@Override
@@ -52,11 +54,30 @@ public class ProjetServiceImpl implements ProjetService {
 
 	}
 
-
 	@Override
 	public void ajouterTache(long idProjet, Tache tache) {
-		// TODO Auto-generated method stub
-		
+		ProjetDev p = getProjetDev(idProjet);
+		if (p != null) {
+			tache.setProjet(p);
+			tacheRepository.save(tache);
+		}
+	}
+
+	@Override
+	public List<Tache> getTaches(long idProjet) {
+		return projetRepository.getTaches(idProjet);
+	}
+
+	@Override
+	public List<ProjetDev> lesProjetsDev() {
+		return projetRepository.getProjetDev();
+	}
+
+	@Override
+	public ProjetDev getProjetDev(long idProjet) {
+		if (projetRepository.existsById(idProjet))
+			return projetRepository.getProjetDev(idProjet);
+		return null;
 	}
 
 }

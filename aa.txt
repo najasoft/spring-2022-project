@@ -1,0 +1,905 @@
+diff -r ./.git/COMMIT_EDITMSG "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/COMMIT_EDITMSG"
+1c1
+< version 1
+---
+> Version 3: Validation des donn√©es
+diff -r ./.git/FETCH_HEAD "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/FETCH_HEAD"
+1,3d0
+< 1747048afbfa50c7e2f833adeab497d21d2f5ca3		branch 'main' of https://github.com/najasoft/spring-2022-project
+< 271b321d02ab257bf6d4da6be1c5c81f194a2c32	not-for-merge	branch 'atelier3' of https://github.com/najasoft/spring-2022-project
+< 1747048afbfa50c7e2f833adeab497d21d2f5ca3	not-for-merge	branch 'atelier4-final' of https://github.com/najasoft/spring-2022-project
+Only in C:\Users\pc\Documents\GitHub\repository/.git: branches
+diff -r ./.git/config "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/config"
+1a2
+> 	symlinks = false
+4d4
+< 	bare = false
+6,9d5
+< 	symlinks = false
+< 	ignorecase = true
+< [lfs]
+< 	repositoryformatversion = 0
+11c7
+< 	url = https://github.com/najasoft/spring-2022-project.git
+---
+> 	url = file:///C:\\Users\\pc\\Documents\\GitHub\\spring-2022-project
+13,21d8
+< [branch "master"]
+< 	remote = origin
+< 	merge = refs/heads/master
+< [branch "main"]
+< 	remote = origin
+< 	merge = refs/heads/main
+< [branch "atelier4-final"]
+< 	remote = origin
+< 	merge = refs/heads/atelier4-final
+Only in ./.git: description
+Only in ./.git/hooks: applypatch-msg.sample
+Only in ./.git/hooks: commit-msg.sample
+Only in ./.git/hooks: fsmonitor-watchman.sample
+Only in ./.git/hooks: post-update.sample
+Only in ./.git/hooks: pre-applypatch.sample
+Only in ./.git/hooks: pre-commit.sample
+Only in ./.git/hooks: pre-merge-commit.sample
+Only in ./.git/hooks: pre-push.sample
+Only in ./.git/hooks: pre-rebase.sample
+Only in ./.git/hooks: pre-receive.sample
+Only in ./.git/hooks: prepare-commit-msg.sample
+Only in ./.git/hooks: push-to-checkout.sample
+Only in ./.git/hooks: update.sample
+Binary files ./.git/index and C:\Users\pc\Documents\GitHub\repository/.git/index differ
+Only in ./.git: info
+diff -r ./.git/logs/HEAD "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/logs/HEAD"
+1,6c1,6
+< 0000000000000000000000000000000000000000 4dac7c6a06c23b6399b7239ee917ff09620769dc najasoft <nadiri@najasoft.com> 1650856040 +0000	commit (initial): version 1
+< 4dac7c6a06c23b6399b7239ee917ff09620769dc 8e342d2846a20595b4c55a56eb9d6680d8645871 najasoft <nadiri@najasoft.com> 1650856525 +0000	commit: version 1
+< 8e342d2846a20595b4c55a56eb9d6680d8645871 271b321d02ab257bf6d4da6be1c5c81f194a2c32 najasoft <nadiri@najasoft.com> 1650856587 +0000	commit: version 1
+< 271b321d02ab257bf6d4da6be1c5c81f194a2c32 1747048afbfa50c7e2f833adeab497d21d2f5ca3 najasoft <nadiri@najasoft.com> 1651267159 +0000	checkout: moving from master to main
+< 1747048afbfa50c7e2f833adeab497d21d2f5ca3 1747048afbfa50c7e2f833adeab497d21d2f5ca3 najasoft <nadiri@najasoft.com> 1651851794 +0000	checkout: moving from main to atelier4-final
+< 1747048afbfa50c7e2f833adeab497d21d2f5ca3 1747048afbfa50c7e2f833adeab497d21d2f5ca3 najasoft <nadiri@najasoft.com> 1651861342 +0000	checkout: moving from atelier4-final to main
+---
+> 0000000000000000000000000000000000000000 d16c65e217a3782017125e0b3d99ca8d9e1d80e2 najasoft <nadiri@najasoft.com> 1650855002 +0000	commit (initial): version 1
+> d16c65e217a3782017125e0b3d99ca8d9e1d80e2 d16c65e217a3782017125e0b3d99ca8d9e1d80e2 najasoft <nadiri@najasoft.com> 1650856259 +0000	checkout: moving from main to d16c65e217a3782017125e0b3d99ca8d9e1d80e2
+> d16c65e217a3782017125e0b3d99ca8d9e1d80e2 26d7af0b5826c27e6ddd3f1ce04c6fbcd09f647f najasoft <nadiri@najasoft.com> 1651262356 +0000	commit: Version 2 Int√©gration des templates
+> 26d7af0b5826c27e6ddd3f1ce04c6fbcd09f647f 1747048afbfa50c7e2f833adeab497d21d2f5ca3 najasoft <nadiri@najasoft.com> 1651262507 +0000	commit: Version 2 Int√©gration des templates
+> 1747048afbfa50c7e2f833adeab497d21d2f5ca3 d16c65e217a3782017125e0b3d99ca8d9e1d80e2 najasoft <nadiri@najasoft.com> 1651268035 +0000	checkout: moving from 1747048afbfa50c7e2f833adeab497d21d2f5ca3 to main
+> d16c65e217a3782017125e0b3d99ca8d9e1d80e2 695868fb34301dbfe37616aba0b9729938ce195d najasoft <nadiri@najasoft.com> 1651885930 +0000	commit: Version 3: Validation des donn√©es
+Only in ./.git/logs/refs/heads: atelier4-final
+diff -r ./.git/logs/refs/heads/main "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/logs/refs/heads/main"
+1c1,2
+< 0000000000000000000000000000000000000000 1747048afbfa50c7e2f833adeab497d21d2f5ca3 najasoft <nadiri@najasoft.com> 1651267113 +0000	push: created
+---
+> 0000000000000000000000000000000000000000 d16c65e217a3782017125e0b3d99ca8d9e1d80e2 najasoft <nadiri@najasoft.com> 1650855002 +0000	commit (initial): version 1
+> d16c65e217a3782017125e0b3d99ca8d9e1d80e2 695868fb34301dbfe37616aba0b9729938ce195d najasoft <nadiri@najasoft.com> 1651885930 +0000	commit: Version 3: Validation des donn√©es
+Only in ./.git/logs/refs/heads: master
+Only in ./.git/logs/refs/remotes/origin: atelier3
+Only in ./.git/logs/refs/remotes/origin: atelier4-final
+diff -r ./.git/logs/refs/remotes/origin/main "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/logs/refs/remotes/origin/main"
+1c1
+< 0000000000000000000000000000000000000000 1747048afbfa50c7e2f833adeab497d21d2f5ca3 najasoft <nadiri@najasoft.com> 1651267171 +0000	update by push
+---
+> 0000000000000000000000000000000000000000 1747048afbfa50c7e2f833adeab497d21d2f5ca3 najasoft <nadiri@najasoft.com> 1651267113 +0000	push: created
+Only in C:\Users\pc\Documents\GitHub\repository/.git/logs/refs/remotes/origin: master
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 05
+Binary files ./.git/objects/08/03c0e6e01bf731857bf1db0783a9399d1ba664 and C:\Users\pc\Documents\GitHub\repository/.git/objects/08/03c0e6e01bf731857bf1db0783a9399d1ba664 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/08: 179384b2a9e4c62c4f2b8a9dfea029991fb78e
+diff -r ./.git/objects/09/e51c99823bf3bc10dc103ad710cfca22dbfd54 "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/objects/09/e51c99823bf3bc10dc103ad710cfca22dbfd54"
+1c1
+< x+)JMU0¥0c040031QpI-N-*ÀLN’ÀJ,KdÿÙ¶Áíc˙æ∞ì∫-lSΩø÷Ωxã°‘3∑ ¢¸l√-A•˚ΩjÛ~û*é-ÎΩ÷UPîüïZÇbxÅ#á—¬≥{7ö‹Ù»Y¡º√ŒÀPõjÑ˘ª ö6oTŸ∫ZŒSıøJçÓÈ‡ÿ?ÏKÕ
+\ No newline at end of file
+---
+> xú+)JMU0¥0c040031QpI-N-*ÀLN’ÀJ,KdÿÙ¶Áíc˙æ∞ì∫-lSΩø÷Ωxã°‘3∑ ¢¸l√-A•˚ΩjÛ~û*é-ÎΩ÷UPîüïZÇbxÅ#á—¬≥{7ö‹Ù»Y¡º√ŒÀPõjÑ˘ª ö6oTŸ∫ZŒSıøJçÓÈ‡ÿ?ÏKÕ
+\ No newline at end of file
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 0b
+Binary files ./.git/objects/0d/c9a6d4e6424a164bc95655d86177684fc69cff and C:\Users\pc\Documents\GitHub\repository/.git/objects/0d/c9a6d4e6424a164bc95655d86177684fc69cff differ
+Binary files ./.git/objects/0f/f6492a7601b3bb878ed3945f0f3ff86eb00886 and C:\Users\pc\Documents\GitHub\repository/.git/objects/0f/f6492a7601b3bb878ed3945f0f3ff86eb00886 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 11
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 17
+Binary files ./.git/objects/1d/8ab018eaf11d9b3a4a90e7818ace373dfbb380 and C:\Users\pc\Documents\GitHub\repository/.git/objects/1d/8ab018eaf11d9b3a4a90e7818ace373dfbb380 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/1d: abe42b329f7651784a464721d5cd6057b79587
+Binary files ./.git/objects/1d/c145ed7313343b88f375bc198df354d0aeb8a9 and C:\Users\pc\Documents\GitHub\repository/.git/objects/1d/c145ed7313343b88f375bc198df354d0aeb8a9 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/1d: c3bab7a1f3fd3a4357efd7a9ec0ed0c9670d59
+Binary files ./.git/objects/20/731d0202985736eae334b5105570b41ccad86e and C:\Users\pc\Documents\GitHub\repository/.git/objects/20/731d0202985736eae334b5105570b41ccad86e differ
+Binary files ./.git/objects/23/7ce2b8f8b8c5ee445c49e23d2be2eabd864484 and C:\Users\pc\Documents\GitHub\repository/.git/objects/23/7ce2b8f8b8c5ee445c49e23d2be2eabd864484 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 26
+Binary files ./.git/objects/27/a43d91a1989f095bdee671fa6ddaebb203402d and C:\Users\pc\Documents\GitHub\repository/.git/objects/27/a43d91a1989f095bdee671fa6ddaebb203402d differ
+diff -r ./.git/objects/28/fae8de78c76c37e0cbb4c88df3ca1992140e2d "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/objects/28/fae8de78c76c37e0cbb4c88df3ca1992140e2d"
+1c1
+< xUé1¬0EYÎSdÑ≈à≠ Fò‡i*”&é∑ °ﬁùî2¿bYﬂœœÆ:Æ‘fΩ]mZ›XïB$ﬂ†·>&tÉ¡⁄:.»é¢86xÔ=IÆÅƒF‘Åjìîø»lπEÌÏÉcã≥†d*ãΩÿß‡ÂsÁêÛyvˇ	òNß§ŒÉ9Êˆ!td¥˚	OÍPÏ¶äÅ©V_Ìâuùñ´<.FÄﬁqïOk
+\ No newline at end of file
+---
+> xúUé1¬0EYÎSdÑ≈à≠KAå0¡“4T¶M%nABΩ;Å2¿‚·ˇ˜ü\˜\´Õzª⁄t∫µ*ÖHæE√CLËFÉçu\êEqlÒ6xí|âç®·≈&)ëŸrç⁄Ÿ;«kfA…T{±¡ÛáÿÁ|CıüÄÈuJÍ4öC~`BOF±óI=äÍ√#S£æ⁄#Î&-Wπ.&Ä	^qïOk
+\ No newline at end of file
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 2f
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 30
+Binary files ./.git/objects/31/c1c454ccc79fbc9b8ac774f8a2f68223a51eb9 and C:\Users\pc\Documents\GitHub\repository/.git/objects/31/c1c454ccc79fbc9b8ac774f8a2f68223a51eb9 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/31: f1960810cf14a11d7cfb0374a79798bd88e039
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 35
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 38
+Binary files ./.git/objects/3e/cfe2ff51b4414e39a59e9975d30bc45753fe11 and C:\Users\pc\Documents\GitHub\repository/.git/objects/3e/cfe2ff51b4414e39a59e9975d30bc45753fe11 differ
+Binary files ./.git/objects/41/326eb9c2d65a8419e8d0cd74e88dd0b26181fb and C:\Users\pc\Documents\GitHub\repository/.git/objects/41/326eb9c2d65a8419e8d0cd74e88dd0b26181fb differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 42
+Binary files ./.git/objects/43/07a8ff31d0c5b55117b10763b1531dede36d9d and C:\Users\pc\Documents\GitHub\repository/.git/objects/43/07a8ff31d0c5b55117b10763b1531dede36d9d differ
+Binary files ./.git/objects/48/5734e33204de64a348687eab1f62e3bf944f41 and C:\Users\pc\Documents\GitHub\repository/.git/objects/48/5734e33204de64a348687eab1f62e3bf944f41 differ
+Binary files ./.git/objects/48/6a3fe699eb019cbdf1e68f00e2591fa7cb8d69 and C:\Users\pc\Documents\GitHub\repository/.git/objects/48/6a3fe699eb019cbdf1e68f00e2591fa7cb8d69 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/48: 980c75ef0174c3c5664134a72336d5ff4ceb7d
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 49
+Binary files ./.git/objects/4a/7c7719c8eb955811ff3b0206b59fa00012eb0c and C:\Users\pc\Documents\GitHub\repository/.git/objects/4a/7c7719c8eb955811ff3b0206b59fa00012eb0c differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 51
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 53
+Binary files ./.git/objects/54/9e00a2a96fa9d7c5dbc9859664a78d980158c2 and C:\Users\pc\Documents\GitHub\repository/.git/objects/54/9e00a2a96fa9d7c5dbc9859664a78d980158c2 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/56: a3357aa35d7ae4dcec0a6eda3c45a75a15839d
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 60
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 64
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 67
+diff -r ./.git/objects/68/2c1daf863b9aadb6d303cc8ad8f7c206e55a36 "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/objects/68/2c1daf863b9aadb6d303cc8ad8f7c206e55a36"
+1,3c1,3
+< x•êAK1Ö=˜WΩ∂ŸB•`!à“"Ç"ûÀl2ªII21ôl€ÔnãR°áÇßI»˜ﬁõº⁄Q}ªò›ﬂåsL6¥BC¶íäíú‹ÍZ-˝!πeUÁ‘⁄t∑úœgãäÕFıh~P	Åq’Kk»¯“ºØ˜6≥‰TptÖ≥#ŒPÊˇgL< DƒÇ#‰º£§ˇºo#cÎA…(¥vS(L≤ƒæãﬂÌ(&äòÿb>„Jx”7t˙≠£∂ätÿ°î⁄3ˆ„˝UÆ÷Oüœ?´±9xtçP† \∆—¯Qq¶4Ú†EèÅ…ˆá!‰˛
+< µC} _‡≤ÿ˙Ω¿}§\
+< î+•Apl&644¡–Ménór≤ÿa}≠æØΩ√$Ü·êÖ¢¿∏Ái6≤Ç}ßæLªËÕ
+\ No newline at end of file
+---
+> xú•ê¡J1Ü=˜)Ñ^€l°R∞DiAœeíÃnRíLL&€ˆÌ›∂z<M¬|ﬂ?ì(OÍv1ªøóî]ÏÑÜB5k5{π5J/√°|˘e”úÍ‘π|∑úœgãÜÌFhy–Åq5®
+> 
+> æ¥oƒÎΩ+,9W˝!Ÿìo©ÉÊe&‚+˝•Ï(õ_˝maù:öå¬?Ö $kDºÑR¶Ñôñæ•Ä7√;ŒKyÍ∫£‡±G/(wÏ«˚´\≠ü>üRŸzÑVh–eæ‡h¸®πSà–a¿»£I‰ÜÉBàe∏ÇÚhŒ3«W∏"∂a/pü®‘å¬EÌ´Ai<€âã-M0ˆìS⁄µ9EÏP˝’æΩ«,é≈#Mëqœ”le)Ö^LªËÕ
+\ No newline at end of file
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 69
+diff -r ./.git/objects/6a/aa1d566d73c005731fabe4edae0411e68085c0 "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/objects/6a/aa1d566d73c005731fabe4edae0411e68085c0"
+1,2c1,3
+< xÖëΩn√ Fªöß∏c≤∞¥Rá®RÜDïá˛V•énmR`´Vïw/§&Rö.6¬ﬂ˝ŒÔZΩÉ˚ª€√¯'´ú±R’îÎﬁ:⁄ú˙fÏ∞EˆA;-∞]";£≠á=ÿ5hùtG∫U^˙qıw‡ZÊQº±∂«ˇÉR´j4◊Ç•∏“Úƒ‘XÈ
+< »: ”ÔZ…Å∑Ã9®oæI±.ExúÎ-úü\Î }I>¥‹lü´≤z_í"\◊R ï)éÖ´yWËÄCΩ≈I¢Xˇ*ÕôW´˜Ë¡_S()Nç5˙2ñ.ñìga—˜Ve§√<0h)¿ÕôRˆçt4IÜCÕ∫YI2‡Õ$}éMÁ(≤¸	”˘y3Êq./Ãß”^\ùOórâòÚ© &3f‹–∏?Â@‰ˆn1
+\ No newline at end of file
+---
+> xúÖêOoÑ ≈{ïO¡q˜¬•Mz0M<Ï¶Ò–?”§GÑ©≤U Ä¶¶ŸÔ^Z5±ªë·Õ˚Ωô≤Q%æøªΩ—î}“
+> ∞’F»ä0’K⁄ûW-4@?H´84)B¢’ 8|¢=˝"å÷Åd@é“	7§ˇAÇ°¯m:∏.JÉæ$Ã˘Ö«'*áBΩHoÄ≤ÈÆl√¨°÷‚Ç≤7J≤ú˚œ:ﬁŒ∫ÒR¯ØÛê¸p|.Ú‚}èøÆﬁ´∞ê>¶sï+èÛGg`ëdëfÕ´Q'pXO«(äG«
+> \Lw˚1gb¿uF.HÁπ°WÇc;w,"ÖfWKb≈µi{aΩ∆∆9∂†AΩúw¡úÓû∏—ß˜º∑˛.eãı´ı-ò°‡°è3˙ˆn1
+\ No newline at end of file
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 6b
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 6c
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 6d
+Binary files ./.git/objects/70/410832a1cdbdb33134d9486ca803b83e4a312a and C:\Users\pc\Documents\GitHub\repository/.git/objects/70/410832a1cdbdb33134d9486ca803b83e4a312a differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/70: a18c5ab03515cd8acf041f4b8f0979b944b5ed
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/75: 0246717dffb9559a74e0412e4bd365ad27cf5e
+Binary files ./.git/objects/75/1d8e79a284a8c8c9c0e36dad3eb3bee3408724 and C:\Users\pc\Documents\GitHub\repository/.git/objects/75/1d8e79a284a8c8c9c0e36dad3eb3bee3408724 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 76
+Binary files ./.git/objects/77/eeb89a53da7c85e99e9642928f3ce525e397ac and C:\Users\pc\Documents\GitHub\repository/.git/objects/77/eeb89a53da7c85e99e9642928f3ce525e397ac differ
+diff -r ./.git/objects/79/3c4ed1a75bebfdb5956d32044a6ed18d4054e7 "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/objects/79/3c4ed1a75bebfdb5956d32044a6ed18d4054e7"
+1,5c1,4
+< xUé±
+< ¬0Ü]ìß∏Qó.
+< "8ËÊ ¯iz∂©iíkhëæªëVJ∑„Óˇæˇ
+< „
+< ÿé/’[V—m+°\¢hìT-î/—∫Õâs›zôd/<Ü®#°U(nñ49qô&Óª¬h »·\Ét≈ÿÁ|˘ﬂ|8„,∑&IO˙’Éë∂ ﬂdõÛ°B∫O∑Ì2…RÏ∞qaí”%ƒÖXÀ'ûj≈\Áµg‰_ Bb
+\ No newline at end of file
+---
+> xúUé¡
+> ¬0DΩ&_±GΩ‰‡EAzÛ ¯i∫∂©iímhë˛ªëVJoÀÃºô-å+`8nºToY!D¥≠Ñr]à¢MJP=¥hPæDÎJ4'ŒuÎ] hdíΩ¢éÑV°∏Y“4‰ƒe∫∏Ô
+> £(#cÑGp“`üÛÂ_˘p∆Y^MíûÙõ#mïø…UlÓòç
+> È>y€dí§.ÿ`„¬$ßKà±.üx™u≥Áuœ»ø Bb
+\ No newline at end of file
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/79: 849e66cc59bd4ae6889d2d4f50d4a72da3586d
+Binary files ./.git/objects/7a/955c7034bbcd05a9528cb1276f765b6e18502f and C:\Users\pc\Documents\GitHub\repository/.git/objects/7a/955c7034bbcd05a9528cb1276f765b6e18502f differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 80
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/83: 827960fbc2ab62e5dcfa8a7948a3c887879965
+Binary files ./.git/objects/83/b82d0b41bf133493b3ba7ebbc9518c4b137a68 and C:\Users\pc\Documents\GitHub\repository/.git/objects/83/b82d0b41bf133493b3ba7ebbc9518c4b137a68 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 84
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 89
+Binary files ./.git/objects/8a/8fb2282df5b8f7263470a5a2dc0e196f35f35f and C:\Users\pc\Documents\GitHub\repository/.git/objects/8a/8fb2282df5b8f7263470a5a2dc0e196f35f35f differ
+Binary files ./.git/objects/90/b37904456613df7317a63e2af28ce28d094320 and C:\Users\pc\Documents\GitHub\repository/.git/objects/90/b37904456613df7317a63e2af28ce28d094320 differ
+Binary files ./.git/objects/91/976fb58f88e4cfd145bff8c95ac59cf60fe48a and C:\Users\pc\Documents\GitHub\repository/.git/objects/91/976fb58f88e4cfd145bff8c95ac59cf60fe48a differ
+Binary files ./.git/objects/91/df63e9652ee73a5fda071169eb072cfe769a0b and C:\Users\pc\Documents\GitHub\repository/.git/objects/91/df63e9652ee73a5fda071169eb072cfe769a0b differ
+Binary files ./.git/objects/92/a57f8ecd3a50118cb09dae7a607655cbb984b7 and C:\Users\pc\Documents\GitHub\repository/.git/objects/92/a57f8ecd3a50118cb09dae7a607655cbb984b7 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 94
+Binary files ./.git/objects/96/140648c3b2f1ef6c40b4db22e7da489cd5264a and C:\Users\pc\Documents\GitHub\repository/.git/objects/96/140648c3b2f1ef6c40b4db22e7da489cd5264a differ
+Binary files ./.git/objects/99/f25bbe5cfc42e16802cf5c499abae716238946 and C:\Users\pc\Documents\GitHub\repository/.git/objects/99/f25bbe5cfc42e16802cf5c499abae716238946 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 9b
+Binary files ./.git/objects/9d/283ec93857ad9d6807dc2100275656ff133c6d and C:\Users\pc\Documents\GitHub\repository/.git/objects/9d/283ec93857ad9d6807dc2100275656ff133c6d differ
+Binary files ./.git/objects/9d/4b29c4f232e375ccb1ac1f5acc616e543ba2f1 and C:\Users\pc\Documents\GitHub\repository/.git/objects/9d/4b29c4f232e375ccb1ac1f5acc616e543ba2f1 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 9f
+Binary files ./.git/objects/a0/a694e000d37abe7989881f67829630dc3899bc and C:\Users\pc\Documents\GitHub\repository/.git/objects/a0/a694e000d37abe7989881f67829630dc3899bc differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: a5
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: ac
+Binary files ./.git/objects/b1/6dfa8af8c6cc39b37fe4ecaa640b79eff2dbec and C:\Users\pc\Documents\GitHub\repository/.git/objects/b1/6dfa8af8c6cc39b37fe4ecaa640b79eff2dbec differ
+Binary files ./.git/objects/b2/24c62dcd01d11fc47cf35ecc7388ce08d3286c and C:\Users\pc\Documents\GitHub\repository/.git/objects/b2/24c62dcd01d11fc47cf35ecc7388ce08d3286c differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/b2: 6e3e4e5d9ab0128d7a57a68d64b2da7cf92cfb
+diff -r ./.git/objects/b2/ec8cd21c060167be56c92d8406954bf57ee8ed "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/objects/b2/ec8cd21c060167be56c92d8406954bf57ee8ed"
+1,2c1
+< x}èª¬0EYìØXñ0!#_ê¶nqIHîóÑˇé äÑüsØ”Zﬂ¬r±ömNz@H!“yP∆óòî´FÂ„≈°E›´Ñ±í¡¥ñí\1√®´V%ìU{J˘Û˛'ƒ˘≠⁄aEÎC¿Ÿ
+< •µdÄŒcØØœ2∏J)·õâ≤Ö3œ©ô≥-™ßÙËÎÕÉÎx©˛õcÜãÄ:&?:üE=˝ˆ≈4ÛŸ¸>˛+JH!oÚõ¨ue
+\ No newline at end of file
+---
+> xú}éΩ¬0ÑYõßXñ0!#Oê¶nqIHî?	!ﬁWQ$Ñ<Ÿwﬂù„XØ6ØÙEı—∫ˆRª¢¥EÀtæY4®:1“∑Bêı.$TQ2'2ÚH1}ÓB¨k—»4Œ{ÃÅ)üCËö0tJ#∞|ö ‡.D5ÜÔf»zLº«z…tUµ†óØg6h±åÜó#fœoYˆpP{ò‘I‰∑®£ﬂ|5øMÕÔı+™‚yà'õ¨ue
+\ No newline at end of file
+Binary files ./.git/objects/b7/cb93e7050f42ff587aefbc40cc038ad4fa3271 and C:\Users\pc\Documents\GitHub\repository/.git/objects/b7/cb93e7050f42ff587aefbc40cc038ad4fa3271 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: b8
+Binary files ./.git/objects/b9/f25a190ea8b08dd680843bfbf68f0c890a0bb7 and C:\Users\pc\Documents\GitHub\repository/.git/objects/b9/f25a190ea8b08dd680843bfbf68f0c890a0bb7 differ
+Binary files ./.git/objects/ba/7682b3b124b5ab1e4925ff247c2dcb535dfcf1 and C:\Users\pc\Documents\GitHub\repository/.git/objects/ba/7682b3b124b5ab1e4925ff247c2dcb535dfcf1 differ
+Binary files ./.git/objects/be/bc2430576aa89b77d1ca1be4c5bb7788fe91f6 and C:\Users\pc\Documents\GitHub\repository/.git/objects/be/bc2430576aa89b77d1ca1be4c5bb7788fe91f6 differ
+Binary files ./.git/objects/c1/dd12f17644411d6e840bd5a10c6ecda0175f18 and C:\Users\pc\Documents\GitHub\repository/.git/objects/c1/dd12f17644411d6e840bd5a10c6ecda0175f18 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: c6
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: c8
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: c9
+Binary files ./.git/objects/cc/50e1e9291e86352c9e9854927892f685132dfa and C:\Users\pc\Documents\GitHub\repository/.git/objects/cc/50e1e9291e86352c9e9854927892f685132dfa differ
+Binary files ./.git/objects/cc/b08d5f974c4883fe8dd01211820c4e6931841f and C:\Users\pc\Documents\GitHub\repository/.git/objects/cc/b08d5f974c4883fe8dd01211820c4e6931841f differ
+Binary files ./.git/objects/cd/8e00da1122df8dfc7d6f00f9ca735d768dd68e and C:\Users\pc\Documents\GitHub\repository/.git/objects/cd/8e00da1122df8dfc7d6f00f9ca735d768dd68e differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/cd: f8dfb1f903df7cf2e532420d6966b09ac82c31
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: d1
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: d6
+Binary files ./.git/objects/d7/40c121f456106bb12ada57e66033487c36d2e8 and C:\Users\pc\Documents\GitHub\repository/.git/objects/d7/40c121f456106bb12ada57e66033487c36d2e8 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: d9
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: de
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: e0
+Binary files ./.git/objects/e3/5304815f110c7051781a46076173bd67cf9966 and C:\Users\pc\Documents\GitHub\repository/.git/objects/e3/5304815f110c7051781a46076173bd67cf9966 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: e5
+Binary files ./.git/objects/e6/41dbeb6ec1e2be45c4aed67bd09e636cd9278e and C:\Users\pc\Documents\GitHub\repository/.git/objects/e6/41dbeb6ec1e2be45c4aed67bd09e636cd9278e differ
+Binary files ./.git/objects/e6/527bf87cc290499cf0dc4b03f01bf67c3b24c1 and C:\Users\pc\Documents\GitHub\repository/.git/objects/e6/527bf87cc290499cf0dc4b03f01bf67c3b24c1 differ
+Binary files ./.git/objects/e6/c66de518703d9153ac810b9597ab32054bd323 and C:\Users\pc\Documents\GitHub\repository/.git/objects/e6/c66de518703d9153ac810b9597ab32054bd323 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: e7
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: ec
+Binary files ./.git/objects/ee/4d773eb61b96690a2c6d4d5bc016ad7516f646 and C:\Users\pc\Documents\GitHub\repository/.git/objects/ee/4d773eb61b96690a2c6d4d5bc016ad7516f646 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: f3
+diff -r ./.git/objects/fa/e9084692df2945e0d16e07091fa852f50d96b4 "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/objects/fa/e9084692df2945e0d16e07091fa852f50d96b4"
+1c1
+< x+)JMU0∑`040031QHÃ /-—À(…Õa0<x$‰ÃÒ˘{fw/˘±Ë[ìÚRπùPUE˘Y©%≈uìñ÷˜ùµ
+---
+> xú+)JMU0∑`040031QHÃ /-—À(…Õa0<x$‰ÃÒ˘{fw/˘±Ë[ìÚRπùPUE˘Y©%≈uìñ÷˜ùµ
+Binary files ./.git/objects/ff/9044bbf5a6423ff152d263815c1069323aba3b and C:\Users\pc\Documents\GitHub\repository/.git/objects/ff/9044bbf5a6423ff152d263815c1069323aba3b differ
+Only in ./.git/objects/pack: pack-8638575302fcffdadefba30099b3e6a4d032957e.idx
+Only in ./.git/objects/pack: pack-8638575302fcffdadefba30099b3e6a4d032957e.pack
+Only in ./.git: packed-refs
+Only in ./.git/refs/heads: atelier4-final
+diff -r ./.git/refs/heads/main "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/refs/heads/main"
+1c1
+< 1747048afbfa50c7e2f833adeab497d21d2f5ca3
+---
+> 695868fb34301dbfe37616aba0b9729938ce195d
+Only in ./.git/refs/heads: master
+Only in ./.git/refs/remotes/origin: atelier3
+Only in ./.git/refs/remotes/origin: atelier4-final
+Only in C:\Users\pc\Documents\GitHub\repository/.git/refs/remotes/origin: master
+Only in .: aa.txt
+diff -r ./mvc-thymeleaf/pom.xml "C:\\Users\\pc\\Documents\\GitHub\\repository/mvc-thymeleaf/pom.xml"
+37c37,45
+< 
+---
+> 		<dependency>
+> 			<groupId>org.springframework.boot</groupId>
+> 			<artifactId>spring-boot-starter-validation</artifactId>
+> 		</dependency>
+> 		<dependency>
+> 			<groupId>nz.net.ultraq.thymeleaf</groupId>
+> 			<artifactId>thymeleaf-layout-dialect</artifactId>
+> 			<version>3.1.0</version>
+> 		</dependency>
+55,58c63
+< 		<dependency>
+< 			<groupId>nz.net.ultraq.thymeleaf</groupId>
+< 			<artifactId>thymeleaf-layout-dialect</artifactId>
+< 		</dependency>
+---
+> 
+64,65d68
+< 
+< 
+diff -r ./mvc-thymeleaf/src/main/java/spring/cours/mvc/thymeleaf/model/Developpeur.java "C:\\Users\\pc\\Documents\\GitHub\\repository/mvc-thymeleaf/src/main/java/spring/cours/mvc/thymeleaf/model/Developpeur.java"
+2a3
+> import java.time.LocalDate;
+4a6
+> import javax.persistence.Column;
+11a14,16
+> import javax.validation.constraints.Email;
+> import javax.validation.constraints.NotBlank;
+> 
+15,16c20,22
+< 	
+< 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
+---
+> 
+> 	@Id
+> 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+17a24,25
+> 	@NotBlank
+> 	@Column(nullable = false)
+18a27,42
+> 
+> 	@Email
+> 	@Column(unique = true)
+> 	private String email;
+> 	private LocalDate dateEmbauche;
+> 	
+> 	
+> 	public String getEmail() {
+> 		return email;
+> 	}
+> 
+> 	public void setEmail(String email) {
+> 		this.email = email;
+> 	}
+> 
+> 	
+20,23c44
+< 	@JoinTable(name="taches_dev",
+< 	joinColumns = @JoinColumn(name="dev_id"),
+< 	inverseJoinColumns = @JoinColumn(name="tache_id")
+< )
+---
+> 	@JoinTable(name = "taches_dev", joinColumns = @JoinColumn(name = "dev_id"), inverseJoinColumns = @JoinColumn(name = "tache_id"))
+25c46
+< 	
+---
+> 
+28a50
+> 
+31a54
+> 
+34a58
+> 
+37a62
+> 
+40a66
+> 
+45c71,78
+< 	
+---
+> 	public LocalDate getDateEmbauche() {
+> 		return dateEmbauche;
+> 	}
+> 
+> 	public void setDateEmbauche(LocalDate dateEmbauche) {
+> 		this.dateEmbauche = dateEmbauche;
+> 	}
+> 
+Only in C:\Users\pc\Documents\GitHub\repository/mvc-thymeleaf/src/main/java/spring/cours/mvc/thymeleaf/mvccontrollers: DevController.java
+diff -r ./mvc-thymeleaf/src/main/java/spring/cours/mvc/thymeleaf/repository/DevRepository.java "C:\\Users\\pc\\Documents\\GitHub\\repository/mvc-thymeleaf/src/main/java/spring/cours/mvc/thymeleaf/repository/DevRepository.java"
+2a3,4
+> import java.util.List;
+> 
+3a6,7
+> import org.springframework.data.jpa.repository.Query;
+> import org.springframework.data.repository.query.Param;
+9a14,20
+> 
+> 	public Developpeur findByNom(String name);
+> 
+> 	public Developpeur findByEmail(String email);
+> 
+> 	@Query("Select d from Developpeur d JOIN d.taches t where t.projet.idProjet=:idP")
+> 	List<Developpeur> getDevs(@Param("idP") long idProjet);
+diff -r ./mvc-thymeleaf/src/main/java/spring/cours/mvc/thymeleaf/repository/ProjetRepository.java "C:\\Users\\pc\\Documents\\GitHub\\repository/mvc-thymeleaf/src/main/java/spring/cours/mvc/thymeleaf/repository/ProjetRepository.java"
+2a3,4
+> import java.util.List;
+> 
+3a6,7
+> import org.springframework.data.jpa.repository.Query;
+> import org.springframework.data.repository.query.Param;
+5a10,11
+> import spring.cours.mvc.thymeleaf.model.ProjetDev;
+> import spring.cours.mvc.thymeleaf.model.Tache;
+8a15,23
+> 	@Query(value="Select t from Tache t where t.projet.idProjet=:idProjet") 
+> 	List<Tache> getTaches(@Param("idProjet")long idProjet); 
+> 	@Query("Select p from ProjetDev p") 
+> 	List<ProjetDev> getProjetDev(); 
+> 	@Query(" Select p from ProjetDev p where idProjet=:idP") 
+> 	ProjetDev getProjetDev(@Param("idP")long id);
+> 
+> 
+> 	
+diff -r ./mvc-thymeleaf/src/main/java/spring/cours/mvc/thymeleaf/services/DevServiceImpl.java "C:\\Users\\pc\\Documents\\GitHub\\repository/mvc-thymeleaf/src/main/java/spring/cours/mvc/thymeleaf/services/DevServiceImpl.java"
+19a20
+> 	
+36,37c37,42
+< 		Developpeur d = devRepository.getById(dev.getIdDev());
+< 		if (d != null)
+---
+> 		
+> 		if (devRepository.existsById(dev.getIdDev())) {
+> 			Developpeur d = devRepository.getById(dev.getIdDev());
+> 			d.setNom(dev.getNom());
+> 			d.setDateEmbauche(dev.getDateEmbauche());
+> 			d.setEmail(dev.getEmail());
+38a44,47
+> 			
+> 		}
+> 		else
+> 			devRepository.save(dev);
+diff -r ./mvc-thymeleaf/src/main/java/spring/cours/mvc/thymeleaf/services/ProjetService.java "C:\\Users\\pc\\Documents\\GitHub\\repository/mvc-thymeleaf/src/main/java/spring/cours/mvc/thymeleaf/services/ProjetService.java"
+5a6
+> import spring.cours.mvc.thymeleaf.model.ProjetDev;
+20a22,27
+> 
+> 	ProjetDev getProjetDev(long idProjet);
+> 
+> 	List<ProjetDev> lesProjetsDev();
+> 
+> 	List<Tache> getTaches(long idProjet);
+diff -r ./mvc-thymeleaf/src/main/java/spring/cours/mvc/thymeleaf/services/ProjetServiceImpl.java "C:\\Users\\pc\\Documents\\GitHub\\repository/mvc-thymeleaf/src/main/java/spring/cours/mvc/thymeleaf/services/ProjetServiceImpl.java"
+8a9
+> import spring.cours.mvc.thymeleaf.model.ProjetDev;
+10a12
+> import spring.cours.mvc.thymeleaf.repository.TacheRepository;
+16,18c18,19
+< 	
+< 
+< 
+---
+> 	@Autowired
+> 	TacheRepository tacheRepository;
+30a32
+> 
+34c36
+< 		
+---
+> 
+55d56
+< 
+58,59c59,80
+< 		// TODO Auto-generated method stub
+< 		
+---
+> 		ProjetDev p = getProjetDev(idProjet);
+> 		if (p != null) {
+> 			tache.setProjet(p);
+> 			tacheRepository.save(tache);
+> 		}
+> 	}
+> 
+> 	@Override
+> 	public List<Tache> getTaches(long idProjet) {
+> 		return projetRepository.getTaches(idProjet);
+> 	}
+> 
+> 	@Override
+> 	public List<ProjetDev> lesProjetsDev() {
+> 		return projetRepository.getProjetDev();
+> 	}
+> 
+> 	@Override
+> 	public ProjetDev getProjetDev(long idProjet) {
+> 		if (projetRepository.existsById(idProjet))
+> 			return projetRepository.getProjetDev(idProjet);
+> 		return null;
+diff -r ./mvc-thymeleaf/src/main/resources/application.properties "C:\\Users\\pc\\Documents\\GitHub\\repository/mvc-thymeleaf/src/main/resources/application.properties"
+13c13,14
+< server.servlet.context-path=/appmvc
+\ No newline at end of file
+---
+> server.servlet.context-path=/appmvc
+> spring.mvc.format.date=yyyy-MM-dd
+\ No newline at end of file
+Only in C:\Users\pc\Documents\GitHub\repository/mvc-thymeleaf/src/main/resources/templates: devs
+diff -r ./mvc-thymeleaf/src/main/resources/templates/projets/projets.html "C:\\Users\\pc\\Documents\\GitHub\\repository/mvc-thymeleaf/src/main/resources/templates/projets/projets.html"
+2,3c2
+< <html xmlns:th="http://thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/default}">
+< 
+---
+> <html xmlns:th="http://thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"layout:decorate="~{layout/default}">
+diff -r ./mvc-thymeleaf/target/classes/META-INF/maven/spring.cours/mvc-thymeleaf/pom.properties "C:\\Users\\pc\\Documents\\GitHub\\repository/mvc-thymeleaf/target/classes/META-INF/maven/spring.cours/mvc-thymeleaf/pom.properties"
+2c2
+< #Mon Apr 25 02:44:08 WET 2022
+---
+> #Sat May 07 01:05:05 WET 2022
+diff -r ./mvc-thymeleaf/target/classes/META-INF/maven/spring.cours/mvc-thymeleaf/pom.xml "C:\\Users\\pc\\Documents\\GitHub\\repository/mvc-thymeleaf/target/classes/META-INF/maven/spring.cours/mvc-thymeleaf/pom.xml"
+1,71c1,80
+< <?xml version="1.0" encoding="UTF-8"?>
+< <project xmlns="http://maven.apache.org/POM/4.0.0"
+< 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+< 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+< 	<modelVersion>4.0.0</modelVersion>
+< 	<parent>
+< 		<groupId>org.springframework.boot</groupId>
+< 		<artifactId>spring-boot-starter-parent</artifactId>
+< 		<version>2.6.5</version>
+< 		<relativePath /> <!-- lookup parent from repository -->
+< 	</parent>
+< 	<groupId>spring.cours</groupId>
+< 	<artifactId>mvc-thymeleaf</artifactId>
+< 	<version>1</version>
+< 	<name>mvc-thymeleaf</name>
+< 	<description>Spring MVC thymeleaf</description>
+< 	<properties>
+< 		<java.version>17</java.version>
+< 	</properties>
+< 	<dependencies>
+< 		<dependency>
+< 			<groupId>org.springframework.boot</groupId>
+< 			<artifactId>spring-boot-starter-actuator</artifactId>
+< 		</dependency>
+< 		<dependency>
+< 			<groupId>org.springframework.boot</groupId>
+< 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+< 		</dependency>
+< 		<dependency>
+< 			<groupId>org.springframework.boot</groupId>
+< 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+< 		</dependency>
+< 		<dependency>
+< 			<groupId>org.springframework.boot</groupId>
+< 			<artifactId>spring-boot-starter-web</artifactId>
+< 		</dependency>
+< 
+< 		<dependency>
+< 			<groupId>org.springframework.boot</groupId>
+< 			<artifactId>spring-boot-devtools</artifactId>
+< 			<scope>runtime</scope>
+< 			<optional>true</optional>
+< 		</dependency>
+< 		
+< <!-- 		<dependency> -->
+< <!-- 			<groupId>com.fasterxml.jackson.dataformat</groupId> -->
+< <!-- 			<artifactId>jackson-dataformat-xml</artifactId> -->
+< <!-- 		</dependency> -->
+< 
+< 		<dependency>
+< 			<groupId>mysql</groupId>
+< 			<artifactId>mysql-connector-java</artifactId>
+< 			<scope>runtime</scope>
+< 		</dependency>
+< 		<dependency>
+< 			<groupId>org.springframework.boot</groupId>
+< 			<artifactId>spring-boot-starter-test</artifactId>
+< 			<scope>test</scope>
+< 		</dependency>
+< 	</dependencies>
+< 
+< 	<build>
+< 		<plugins>
+< 			<plugin>
+< 				<groupId>org.springframework.boot</groupId>
+< 				<artifactId>spring-boot-maven-plugin</artifactId>
+< 			</plugin>
+< 		</plugins>
+< 	</build>
+< 
+< </project>
+---
+> <?xml version="1.0" encoding="UTF-8"?>
+> <project xmlns="http://maven.apache.org/POM/4.0.0"
+> 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+> 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+> 	<modelVersion>4.0.0</modelVersion>
+> 	<parent>
+> 		<groupId>org.springframework.boot</groupId>
+> 		<artifactId>spring-boot-starter-parent</artifactId>
+> 		<version>2.6.5</version>
+> 		<relativePath /> <!-- lookup parent from repository -->
+> 	</parent>
+> 	<groupId>spring.cours</groupId>
+> 	<artifactId>mvc-thymeleaf</artifactId>
+> 	<version>1</version>
+> 	<name>mvc-thymeleaf</name>
+> 	<description>Spring MVC thymeleaf</description>
+> 	<properties>
+> 		<java.version>17</java.version>
+> 	</properties>
+> 	<dependencies>
+> 		<dependency>
+> 			<groupId>org.springframework.boot</groupId>
+> 			<artifactId>spring-boot-starter-actuator</artifactId>
+> 		</dependency>
+> 		<dependency>
+> 			<groupId>org.springframework.boot</groupId>
+> 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+> 		</dependency>
+> 		<dependency>
+> 			<groupId>org.springframework.boot</groupId>
+> 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+> 		</dependency>
+> 		<dependency>
+> 			<groupId>org.springframework.boot</groupId>
+> 			<artifactId>spring-boot-starter-web</artifactId>
+> 		</dependency>
+> 		<dependency>
+> 			<groupId>org.springframework.boot</groupId>
+> 			<artifactId>spring-boot-starter-validation</artifactId>
+> 		</dependency>
+> 		<dependency>
+> 			<groupId>nz.net.ultraq.thymeleaf</groupId>
+> 			<artifactId>thymeleaf-layout-dialect</artifactId>
+> 			<version>3.1.0</version>
+> 		</dependency>
+> 		<dependency>
+> 			<groupId>org.springframework.boot</groupId>
+> 			<artifactId>spring-boot-devtools</artifactId>
+> 			<scope>runtime</scope>
+> 			<optional>true</optional>
+> 		</dependency>
+> 
+> 		<!-- <dependency> -->
+> 		<!-- <groupId>com.fasterxml.jackson.dataformat</groupId> -->
+> 		<!-- <artifactId>jackson-dataformat-xml</artifactId> -->
+> 		<!-- </dependency> -->
+> 
+> 		<dependency>
+> 			<groupId>mysql</groupId>
+> 			<artifactId>mysql-connector-java</artifactId>
+> 			<scope>runtime</scope>
+> 		</dependency>
+> 
+> 		<dependency>
+> 			<groupId>org.springframework.boot</groupId>
+> 			<artifactId>spring-boot-starter-test</artifactId>
+> 			<scope>test</scope>
+> 		</dependency>
+> 	</dependencies>
+> 
+> 	<build>
+> 		<plugins>
+> 			<plugin>
+> 				<groupId>org.springframework.boot</groupId>
+> 				<artifactId>spring-boot-maven-plugin</artifactId>
+> 			</plugin>
+> 		</plugins>
+> 	</build>
+> 
+> </project>
+Only in C:\Users\pc\Documents\GitHub\repository/mvc-thymeleaf/target/classes: application.properties
+Binary files ./mvc-thymeleaf/target/classes/spring/cours/mvc/thymeleaf/model/Developpeur.class and C:\Users\pc\Documents\GitHub\repository/mvc-thymeleaf/target/classes/spring/cours/mvc/thymeleaf/model/Developpeur.class differ
+Only in C:\Users\pc\Documents\GitHub\repository/mvc-thymeleaf/target/classes/spring/cours/mvc/thymeleaf/mvccontrollers: DevController.class
+Binary files ./mvc-thymeleaf/target/classes/spring/cours/mvc/thymeleaf/mvccontrollers/ProjetController.class and C:\Users\pc\Documents\GitHub\repository/mvc-thymeleaf/target/classes/spring/cours/mvc/thymeleaf/mvccontrollers/ProjetController.class differ
+Binary files ./mvc-thymeleaf/target/classes/spring/cours/mvc/thymeleaf/repository/DevRepository.class and C:\Users\pc\Documents\GitHub\repository/mvc-thymeleaf/target/classes/spring/cours/mvc/thymeleaf/repository/DevRepository.class differ
+Binary files ./mvc-thymeleaf/target/classes/spring/cours/mvc/thymeleaf/repository/ProjetRepository.class and C:\Users\pc\Documents\GitHub\repository/mvc-thymeleaf/target/classes/spring/cours/mvc/thymeleaf/repository/ProjetRepository.class differ
+Binary files ./mvc-thymeleaf/target/classes/spring/cours/mvc/thymeleaf/services/DevServiceImpl.class and C:\Users\pc\Documents\GitHub\repository/mvc-thymeleaf/target/classes/spring/cours/mvc/thymeleaf/services/DevServiceImpl.class differ
+Binary files ./mvc-thymeleaf/target/classes/spring/cours/mvc/thymeleaf/services/ProjetService.class and C:\Users\pc\Documents\GitHub\repository/mvc-thymeleaf/target/classes/spring/cours/mvc/thymeleaf/services/ProjetService.class differ
+Binary files ./mvc-thymeleaf/target/classes/spring/cours/mvc/thymeleaf/services/ProjetServiceImpl.class and C:\Users\pc\Documents\GitHub\repository/mvc-thymeleaf/target/classes/spring/cours/mvc/thymeleaf/services/ProjetServiceImpl.class differ
+Only in C:\Users\pc\Documents\GitHub\repository/mvc-thymeleaf/target/classes: templates
+diff -r ./.git/COMMIT_EDITMSG "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/COMMIT_EDITMSG"
+1c1
+< version 1
+---
+> Version 3: Validation des donn√©es
+diff -r ./.git/FETCH_HEAD "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/FETCH_HEAD"
+1,3d0
+< 1747048afbfa50c7e2f833adeab497d21d2f5ca3		branch 'main' of https://github.com/najasoft/spring-2022-project
+< 271b321d02ab257bf6d4da6be1c5c81f194a2c32	not-for-merge	branch 'atelier3' of https://github.com/najasoft/spring-2022-project
+< 1747048afbfa50c7e2f833adeab497d21d2f5ca3	not-for-merge	branch 'atelier4-final' of https://github.com/najasoft/spring-2022-project
+Only in C:\Users\pc\Documents\GitHub\repository/.git: branches
+diff -r ./.git/config "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/config"
+1a2
+> 	symlinks = false
+4d4
+< 	bare = false
+6,9d5
+< 	symlinks = false
+< 	ignorecase = true
+< [lfs]
+< 	repositoryformatversion = 0
+11c7
+< 	url = https://github.com/najasoft/spring-2022-project.git
+---
+> 	url = file:///C:\\Users\\pc\\Documents\\GitHub\\spring-2022-project
+13,21d8
+< [branch "master"]
+< 	remote = origin
+< 	merge = refs/heads/master
+< [branch "main"]
+< 	remote = origin
+< 	merge = refs/heads/main
+< [branch "atelier4-final"]
+< 	remote = origin
+< 	merge = refs/heads/atelier4-final
+Only in ./.git: description
+Only in ./.git/hooks: applypatch-msg.sample
+Only in ./.git/hooks: commit-msg.sample
+Only in ./.git/hooks: fsmonitor-watchman.sample
+Only in ./.git/hooks: post-update.sample
+Only in ./.git/hooks: pre-applypatch.sample
+Only in ./.git/hooks: pre-commit.sample
+Only in ./.git/hooks: pre-merge-commit.sample
+Only in ./.git/hooks: pre-push.sample
+Only in ./.git/hooks: pre-rebase.sample
+Only in ./.git/hooks: pre-receive.sample
+Only in ./.git/hooks: prepare-commit-msg.sample
+Only in ./.git/hooks: push-to-checkout.sample
+Only in ./.git/hooks: update.sample
+Binary files ./.git/index and C:\Users\pc\Documents\GitHub\repository/.git/index differ
+Only in ./.git: info
+diff -r ./.git/logs/HEAD "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/logs/HEAD"
+1,6c1,6
+< 0000000000000000000000000000000000000000 4dac7c6a06c23b6399b7239ee917ff09620769dc najasoft <nadiri@najasoft.com> 1650856040 +0000	commit (initial): version 1
+< 4dac7c6a06c23b6399b7239ee917ff09620769dc 8e342d2846a20595b4c55a56eb9d6680d8645871 najasoft <nadiri@najasoft.com> 1650856525 +0000	commit: version 1
+< 8e342d2846a20595b4c55a56eb9d6680d8645871 271b321d02ab257bf6d4da6be1c5c81f194a2c32 najasoft <nadiri@najasoft.com> 1650856587 +0000	commit: version 1
+< 271b321d02ab257bf6d4da6be1c5c81f194a2c32 1747048afbfa50c7e2f833adeab497d21d2f5ca3 najasoft <nadiri@najasoft.com> 1651267159 +0000	checkout: moving from master to main
+< 1747048afbfa50c7e2f833adeab497d21d2f5ca3 1747048afbfa50c7e2f833adeab497d21d2f5ca3 najasoft <nadiri@najasoft.com> 1651851794 +0000	checkout: moving from main to atelier4-final
+< 1747048afbfa50c7e2f833adeab497d21d2f5ca3 1747048afbfa50c7e2f833adeab497d21d2f5ca3 najasoft <nadiri@najasoft.com> 1651861342 +0000	checkout: moving from atelier4-final to main
+---
+> 0000000000000000000000000000000000000000 d16c65e217a3782017125e0b3d99ca8d9e1d80e2 najasoft <nadiri@najasoft.com> 1650855002 +0000	commit (initial): version 1
+> d16c65e217a3782017125e0b3d99ca8d9e1d80e2 d16c65e217a3782017125e0b3d99ca8d9e1d80e2 najasoft <nadiri@najasoft.com> 1650856259 +0000	checkout: moving from main to d16c65e217a3782017125e0b3d99ca8d9e1d80e2
+> d16c65e217a3782017125e0b3d99ca8d9e1d80e2 26d7af0b5826c27e6ddd3f1ce04c6fbcd09f647f najasoft <nadiri@najasoft.com> 1651262356 +0000	commit: Version 2 Int√©gration des templates
+> 26d7af0b5826c27e6ddd3f1ce04c6fbcd09f647f 1747048afbfa50c7e2f833adeab497d21d2f5ca3 najasoft <nadiri@najasoft.com> 1651262507 +0000	commit: Version 2 Int√©gration des templates
+> 1747048afbfa50c7e2f833adeab497d21d2f5ca3 d16c65e217a3782017125e0b3d99ca8d9e1d80e2 najasoft <nadiri@najasoft.com> 1651268035 +0000	checkout: moving from 1747048afbfa50c7e2f833adeab497d21d2f5ca3 to main
+> d16c65e217a3782017125e0b3d99ca8d9e1d80e2 695868fb34301dbfe37616aba0b9729938ce195d najasoft <nadiri@najasoft.com> 1651885930 +0000	commit: Version 3: Validation des donn√©es
+Only in ./.git/logs/refs/heads: atelier4-final
+diff -r ./.git/logs/refs/heads/main "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/logs/refs/heads/main"
+1c1,2
+< 0000000000000000000000000000000000000000 1747048afbfa50c7e2f833adeab497d21d2f5ca3 najasoft <nadiri@najasoft.com> 1651267113 +0000	push: created
+---
+> 0000000000000000000000000000000000000000 d16c65e217a3782017125e0b3d99ca8d9e1d80e2 najasoft <nadiri@najasoft.com> 1650855002 +0000	commit (initial): version 1
+> d16c65e217a3782017125e0b3d99ca8d9e1d80e2 695868fb34301dbfe37616aba0b9729938ce195d najasoft <nadiri@najasoft.com> 1651885930 +0000	commit: Version 3: Validation des donn√©es
+Only in ./.git/logs/refs/heads: master
+Only in ./.git/logs/refs/remotes/origin: atelier3
+Only in ./.git/logs/refs/remotes/origin: atelier4-final
+diff -r ./.git/logs/refs/remotes/origin/main "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/logs/refs/remotes/origin/main"
+1c1
+< 0000000000000000000000000000000000000000 1747048afbfa50c7e2f833adeab497d21d2f5ca3 najasoft <nadiri@najasoft.com> 1651267171 +0000	update by push
+---
+> 0000000000000000000000000000000000000000 1747048afbfa50c7e2f833adeab497d21d2f5ca3 najasoft <nadiri@najasoft.com> 1651267113 +0000	push: created
+Only in C:\Users\pc\Documents\GitHub\repository/.git/logs/refs/remotes/origin: master
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 05
+Binary files ./.git/objects/08/03c0e6e01bf731857bf1db0783a9399d1ba664 and C:\Users\pc\Documents\GitHub\repository/.git/objects/08/03c0e6e01bf731857bf1db0783a9399d1ba664 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/08: 179384b2a9e4c62c4f2b8a9dfea029991fb78e
+diff -r ./.git/objects/09/e51c99823bf3bc10dc103ad710cfca22dbfd54 "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/objects/09/e51c99823bf3bc10dc103ad710cfca22dbfd54"
+1c1
+< x+)JMU0¥0c040031QpI-N-*ÀLN’ÀJ,KdÿÙ¶Áíc˙æ∞ì∫-lSΩø÷Ωxã°‘3∑ ¢¸l√-A•˚ΩjÛ~û*é-ÎΩ÷UPîüïZÇbxÅ#á—¬≥{7ö‹Ù»Y¡º√ŒÀPõjÑ˘ª ö6oTŸ∫ZŒSıøJçÓÈ‡ÿ?ÏKÕ
+\ No newline at end of file
+---
+> xú+)JMU0¥0c040031QpI-N-*ÀLN’ÀJ,KdÿÙ¶Áíc˙æ∞ì∫-lSΩø÷Ωxã°‘3∑ ¢¸l√-A•˚ΩjÛ~û*é-ÎΩ÷UPîüïZÇbxÅ#á—¬≥{7ö‹Ù»Y¡º√ŒÀPõjÑ˘ª ö6oTŸ∫ZŒSıøJçÓÈ‡ÿ?ÏKÕ
+\ No newline at end of file
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 0b
+Binary files ./.git/objects/0d/c9a6d4e6424a164bc95655d86177684fc69cff and C:\Users\pc\Documents\GitHub\repository/.git/objects/0d/c9a6d4e6424a164bc95655d86177684fc69cff differ
+Binary files ./.git/objects/0f/f6492a7601b3bb878ed3945f0f3ff86eb00886 and C:\Users\pc\Documents\GitHub\repository/.git/objects/0f/f6492a7601b3bb878ed3945f0f3ff86eb00886 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 11
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 17
+Binary files ./.git/objects/1d/8ab018eaf11d9b3a4a90e7818ace373dfbb380 and C:\Users\pc\Documents\GitHub\repository/.git/objects/1d/8ab018eaf11d9b3a4a90e7818ace373dfbb380 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/1d: abe42b329f7651784a464721d5cd6057b79587
+Binary files ./.git/objects/1d/c145ed7313343b88f375bc198df354d0aeb8a9 and C:\Users\pc\Documents\GitHub\repository/.git/objects/1d/c145ed7313343b88f375bc198df354d0aeb8a9 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/1d: c3bab7a1f3fd3a4357efd7a9ec0ed0c9670d59
+Binary files ./.git/objects/20/731d0202985736eae334b5105570b41ccad86e and C:\Users\pc\Documents\GitHub\repository/.git/objects/20/731d0202985736eae334b5105570b41ccad86e differ
+Binary files ./.git/objects/23/7ce2b8f8b8c5ee445c49e23d2be2eabd864484 and C:\Users\pc\Documents\GitHub\repository/.git/objects/23/7ce2b8f8b8c5ee445c49e23d2be2eabd864484 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 26
+Binary files ./.git/objects/27/a43d91a1989f095bdee671fa6ddaebb203402d and C:\Users\pc\Documents\GitHub\repository/.git/objects/27/a43d91a1989f095bdee671fa6ddaebb203402d differ
+diff -r ./.git/objects/28/fae8de78c76c37e0cbb4c88df3ca1992140e2d "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/objects/28/fae8de78c76c37e0cbb4c88df3ca1992140e2d"
+1c1
+< xUé1¬0EYÎSdÑ≈à≠ Fò‡i*”&é∑ °ﬁùî2¿bYﬂœœÆ:Æ‘fΩ]mZ›XïB$ﬂ†·>&tÉ¡⁄:.»é¢86xÔ=IÆÅƒF‘Åjìîø»lπEÌÏÉcã≥†d*ãΩÿß‡ÂsÁêÛyvˇ	òNß§ŒÉ9Êˆ!td¥˚	OÍPÏ¶äÅ©V_Ìâuùñ´<.FÄﬁqïOk
+\ No newline at end of file
+---
+> xúUé1¬0EYÎSdÑ≈à≠KAå0¡“4T¶M%nABΩ;Å2¿‚·ˇ˜ü\˜\´Õzª⁄t∫µ*ÖHæE√CLËFÉçu\êEqlÒ6xí|âç®·≈&)ëŸrç⁄Ÿ;«kfA…T{±¡ÛáÿÁ|CıüÄÈuJÍ4öC~`BOF±óI=äÍ√#S£æ⁄#Î&-Wπ.&Ä	^qïOk
+\ No newline at end of file
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 2f
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 30
+Binary files ./.git/objects/31/c1c454ccc79fbc9b8ac774f8a2f68223a51eb9 and C:\Users\pc\Documents\GitHub\repository/.git/objects/31/c1c454ccc79fbc9b8ac774f8a2f68223a51eb9 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/31: f1960810cf14a11d7cfb0374a79798bd88e039
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 35
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 38
+Binary files ./.git/objects/3e/cfe2ff51b4414e39a59e9975d30bc45753fe11 and C:\Users\pc\Documents\GitHub\repository/.git/objects/3e/cfe2ff51b4414e39a59e9975d30bc45753fe11 differ
+Binary files ./.git/objects/41/326eb9c2d65a8419e8d0cd74e88dd0b26181fb and C:\Users\pc\Documents\GitHub\repository/.git/objects/41/326eb9c2d65a8419e8d0cd74e88dd0b26181fb differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 42
+Binary files ./.git/objects/43/07a8ff31d0c5b55117b10763b1531dede36d9d and C:\Users\pc\Documents\GitHub\repository/.git/objects/43/07a8ff31d0c5b55117b10763b1531dede36d9d differ
+Binary files ./.git/objects/48/5734e33204de64a348687eab1f62e3bf944f41 and C:\Users\pc\Documents\GitHub\repository/.git/objects/48/5734e33204de64a348687eab1f62e3bf944f41 differ
+Binary files ./.git/objects/48/6a3fe699eb019cbdf1e68f00e2591fa7cb8d69 and C:\Users\pc\Documents\GitHub\repository/.git/objects/48/6a3fe699eb019cbdf1e68f00e2591fa7cb8d69 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/48: 980c75ef0174c3c5664134a72336d5ff4ceb7d
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 49
+Binary files ./.git/objects/4a/7c7719c8eb955811ff3b0206b59fa00012eb0c and C:\Users\pc\Documents\GitHub\repository/.git/objects/4a/7c7719c8eb955811ff3b0206b59fa00012eb0c differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 51
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 53
+Binary files ./.git/objects/54/9e00a2a96fa9d7c5dbc9859664a78d980158c2 and C:\Users\pc\Documents\GitHub\repository/.git/objects/54/9e00a2a96fa9d7c5dbc9859664a78d980158c2 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/56: a3357aa35d7ae4dcec0a6eda3c45a75a15839d
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 60
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 64
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 67
+diff -r ./.git/objects/68/2c1daf863b9aadb6d303cc8ad8f7c206e55a36 "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/objects/68/2c1daf863b9aadb6d303cc8ad8f7c206e55a36"
+1,3c1,3
+< x•êAK1Ö=˜WΩ∂ŸB•`!à“"Ç"ûÀl2ªII21ôl€ÔnãR°áÇßI»˜ﬁõº⁄Q}ªò›ﬂåsL6¥BC¶íäíú‹ÍZ-˝!πeUÁ‘⁄t∑úœgãäÕFıh~P	Åq’Kk»¯“ºØ˜6≥‰TptÖ≥#ŒPÊˇgL< DƒÇ#‰º£§ˇºo#cÎA…(¥vS(L≤ƒæãﬂÌ(&äòÿb>„Jx”7t˙≠£∂ätÿ°î⁄3ˆ„˝UÆ÷Oüœ?´±9xtçP† \∆—¯Qq¶4Ú†EèÅ…ˆá!‰˛
+< µC} _‡≤ÿ˙Ω¿}§\
+< î+•Apl&644¡–Ménór≤ÿa}≠æØΩ√$Ü·êÖ¢¿∏Ái6≤Ç}ßæLªËÕ
+\ No newline at end of file
+---
+> xú•ê¡J1Ü=˜)Ñ^€l°R∞DiAœeíÃnRíLL&€ˆÌ›∂z<M¬|ﬂ?ì(OÍv1ªøóî]ÏÑÜB5k5{π5J/√°|˘e”úÍ‘π|∑úœgãÜÌFhy–Åq5®
+> 
+> æ¥oƒÎΩ+,9W˝!Ÿìo©ÉÊe&‚+˝•Ï(õ_˝maù:öå¬?Ö $kDºÑR¶Ñôñæ•Ä7√;ŒKyÍ∫£‡±G/(wÏ«˚´\≠ü>üRŸzÑVh–eæ‡h¸®πSà–a¿»£I‰ÜÉBàe∏ÇÚhŒ3«W∏"∂a/pü®‘å¬EÌ´Ai<€âã-M0ˆìS⁄µ9EÏP˝’æΩ«,é≈#Mëqœ”le)Ö^LªËÕ
+\ No newline at end of file
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 69
+diff -r ./.git/objects/6a/aa1d566d73c005731fabe4edae0411e68085c0 "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/objects/6a/aa1d566d73c005731fabe4edae0411e68085c0"
+1,2c1,3
+< xÖëΩn√ Fªöß∏c≤∞¥Rá®RÜDïá˛V•énmR`´Vïw/§&Rö.6¬ﬂ˝ŒÔZΩÉ˚ª€√¯'´ú±R’îÎﬁ:⁄ú˙fÏ∞EˆA;-∞]";£≠á=ÿ5hùtG∫U^˙qıw‡ZÊQº±∂«ˇÉR´j4◊Ç•∏“Úƒ‘XÈ
+< »: ”ÔZ…Å∑Ã9®oæI±.ExúÎ-úü\Î }I>¥‹lü´≤z_í"\◊R ï)éÖ´yWËÄCΩ≈I¢Xˇ*ÕôW´˜Ë¡_S()Nç5˙2ñ.ñìga—˜Ve§√<0h)¿ÕôRˆçt4IÜCÕ∫YI2‡Õ$}éMÁ(≤¸	”˘y3Êq./Ãß”^\ùOórâòÚ© &3f‹–∏?Â@‰ˆn1
+\ No newline at end of file
+---
+> xúÖêOoÑ ≈{ïO¡q˜¬•Mz0M<Ï¶Ò–?”§GÑ©≤U Ä¶¶ŸÔ^Z5±ªë·Õ˚Ωô≤Q%æøªΩ—î}“
+> ∞’F»ä0’K⁄ûW-4@?H´84)B¢’ 8|¢=˝"å÷Åd@é“	7§ˇAÇ°¯m:∏.JÉæ$Ã˘Ö«'*áBΩHoÄ≤ÈÆl√¨°÷‚Ç≤7J≤ú˚œ:ﬁŒ∫ÒR¯ØÛê¸p|.Ú‚}èøÆﬁ´∞ê>¶sï+èÛGg`ëdëfÕ´Q'pXO«(äG«
+> \Lw˚1gb¿uF.HÁπ°WÇc;w,"ÖfWKb≈µi{aΩ∆∆9∂†AΩúw¡úÓû∏—ß˜º∑˛.eãı´ı-ò°‡°è3˙ˆn1
+\ No newline at end of file
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 6b
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 6c
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 6d
+Binary files ./.git/objects/70/410832a1cdbdb33134d9486ca803b83e4a312a and C:\Users\pc\Documents\GitHub\repository/.git/objects/70/410832a1cdbdb33134d9486ca803b83e4a312a differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/70: a18c5ab03515cd8acf041f4b8f0979b944b5ed
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/75: 0246717dffb9559a74e0412e4bd365ad27cf5e
+Binary files ./.git/objects/75/1d8e79a284a8c8c9c0e36dad3eb3bee3408724 and C:\Users\pc\Documents\GitHub\repository/.git/objects/75/1d8e79a284a8c8c9c0e36dad3eb3bee3408724 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 76
+Binary files ./.git/objects/77/eeb89a53da7c85e99e9642928f3ce525e397ac and C:\Users\pc\Documents\GitHub\repository/.git/objects/77/eeb89a53da7c85e99e9642928f3ce525e397ac differ
+diff -r ./.git/objects/79/3c4ed1a75bebfdb5956d32044a6ed18d4054e7 "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/objects/79/3c4ed1a75bebfdb5956d32044a6ed18d4054e7"
+1,5c1,4
+< xUé±
+< ¬0Ü]ìß∏Qó.
+< "8ËÊ ¯iz∂©iíkhëæªëVJ∑„Óˇæˇ
+< „
+< ÿé/’[V—m+°\¢hìT-î/—∫Õâs›zôd/<Ü®#°U(nñ49qô&Óª¬h »·\Ét≈ÿÁ|˘ﬂ|8„,∑&IO˙’Éë∂ ﬂdõÛ°B∫O∑Ì2…RÏ∞qaí”%ƒÖXÀ'ûj≈\Áµg‰_ Bb
+\ No newline at end of file
+---
+> xúUé¡
+> ¬0DΩ&_±GΩ‰‡EAzÛ ¯i∫∂©iímhë˛ªëVJoÀÃºô-å+`8nºToY!D¥≠Ñr]à¢MJP=¥hPæDÎJ4'ŒuÎ] hdíΩ¢éÑV°∏Y“4‰ƒe∫∏Ô
+> £(#cÑGp“`üÛÂ_˘p∆Y^MíûÙõ#mïø…UlÓòç
+> È>y€dí§.ÿ`„¬$ßKà±.üx™u≥Áuœ»ø Bb
+\ No newline at end of file
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/79: 849e66cc59bd4ae6889d2d4f50d4a72da3586d
+Binary files ./.git/objects/7a/955c7034bbcd05a9528cb1276f765b6e18502f and C:\Users\pc\Documents\GitHub\repository/.git/objects/7a/955c7034bbcd05a9528cb1276f765b6e18502f differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 80
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/83: 827960fbc2ab62e5dcfa8a7948a3c887879965
+Binary files ./.git/objects/83/b82d0b41bf133493b3ba7ebbc9518c4b137a68 and C:\Users\pc\Documents\GitHub\repository/.git/objects/83/b82d0b41bf133493b3ba7ebbc9518c4b137a68 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 84
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 89
+Binary files ./.git/objects/8a/8fb2282df5b8f7263470a5a2dc0e196f35f35f and C:\Users\pc\Documents\GitHub\repository/.git/objects/8a/8fb2282df5b8f7263470a5a2dc0e196f35f35f differ
+Binary files ./.git/objects/90/b37904456613df7317a63e2af28ce28d094320 and C:\Users\pc\Documents\GitHub\repository/.git/objects/90/b37904456613df7317a63e2af28ce28d094320 differ
+Binary files ./.git/objects/91/976fb58f88e4cfd145bff8c95ac59cf60fe48a and C:\Users\pc\Documents\GitHub\repository/.git/objects/91/976fb58f88e4cfd145bff8c95ac59cf60fe48a differ
+Binary files ./.git/objects/91/df63e9652ee73a5fda071169eb072cfe769a0b and C:\Users\pc\Documents\GitHub\repository/.git/objects/91/df63e9652ee73a5fda071169eb072cfe769a0b differ
+Binary files ./.git/objects/92/a57f8ecd3a50118cb09dae7a607655cbb984b7 and C:\Users\pc\Documents\GitHub\repository/.git/objects/92/a57f8ecd3a50118cb09dae7a607655cbb984b7 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 94
+Binary files ./.git/objects/96/140648c3b2f1ef6c40b4db22e7da489cd5264a and C:\Users\pc\Documents\GitHub\repository/.git/objects/96/140648c3b2f1ef6c40b4db22e7da489cd5264a differ
+Binary files ./.git/objects/99/f25bbe5cfc42e16802cf5c499abae716238946 and C:\Users\pc\Documents\GitHub\repository/.git/objects/99/f25bbe5cfc42e16802cf5c499abae716238946 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 9b
+Binary files ./.git/objects/9d/283ec93857ad9d6807dc2100275656ff133c6d and C:\Users\pc\Documents\GitHub\repository/.git/objects/9d/283ec93857ad9d6807dc2100275656ff133c6d differ
+Binary files ./.git/objects/9d/4b29c4f232e375ccb1ac1f5acc616e543ba2f1 and C:\Users\pc\Documents\GitHub\repository/.git/objects/9d/4b29c4f232e375ccb1ac1f5acc616e543ba2f1 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: 9f
+Binary files ./.git/objects/a0/a694e000d37abe7989881f67829630dc3899bc and C:\Users\pc\Documents\GitHub\repository/.git/objects/a0/a694e000d37abe7989881f67829630dc3899bc differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: a5
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: ac
+Binary files ./.git/objects/b1/6dfa8af8c6cc39b37fe4ecaa640b79eff2dbec and C:\Users\pc\Documents\GitHub\repository/.git/objects/b1/6dfa8af8c6cc39b37fe4ecaa640b79eff2dbec differ
+Binary files ./.git/objects/b2/24c62dcd01d11fc47cf35ecc7388ce08d3286c and C:\Users\pc\Documents\GitHub\repository/.git/objects/b2/24c62dcd01d11fc47cf35ecc7388ce08d3286c differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/b2: 6e3e4e5d9ab0128d7a57a68d64b2da7cf92cfb
+diff -r ./.git/objects/b2/ec8cd21c060167be56c92d8406954bf57ee8ed "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/objects/b2/ec8cd21c060167be56c92d8406954bf57ee8ed"
+1,2c1
+< x}èª¬0EYìØXñ0!#_ê¶nqIHîóÑˇé äÑüsØ”Zﬂ¬r±ömNz@H!“yP∆óòî´FÂ„≈°E›´Ñ±í¡¥ñí\1√®´V%ìU{J˘Û˛'ƒ˘≠⁄aEÎC¿Ÿ
+< •µdÄŒcØØœ2∏J)·õâ≤Ö3œ©ô≥-™ßÙËÎÕÉÎx©˛õcÜãÄ:&?:üE=˝ˆ≈4ÛŸ¸>˛+JH!oÚõ¨ue
+\ No newline at end of file
+---
+> xú}éΩ¬0ÑYõßXñ0!#Oê¶nqIHî?	!ﬁWQ$Ñ<Ÿwﬂù„XØ6ØÙEı—∫ˆRª¢¥EÀtæY4®:1“∑Bêı.$TQ2'2ÚH1}ÓB¨k—»4Œ{ÃÅ)üCËö0tJ#∞|ö ‡.D5ÜÔf»zLº«z…tUµ†óØg6h±åÜó#fœoYˆpP{ò‘I‰∑®£ﬂ|5øMÕÔı+™‚yà'õ¨ue
+\ No newline at end of file
+Binary files ./.git/objects/b7/cb93e7050f42ff587aefbc40cc038ad4fa3271 and C:\Users\pc\Documents\GitHub\repository/.git/objects/b7/cb93e7050f42ff587aefbc40cc038ad4fa3271 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: b8
+Binary files ./.git/objects/b9/f25a190ea8b08dd680843bfbf68f0c890a0bb7 and C:\Users\pc\Documents\GitHub\repository/.git/objects/b9/f25a190ea8b08dd680843bfbf68f0c890a0bb7 differ
+Binary files ./.git/objects/ba/7682b3b124b5ab1e4925ff247c2dcb535dfcf1 and C:\Users\pc\Documents\GitHub\repository/.git/objects/ba/7682b3b124b5ab1e4925ff247c2dcb535dfcf1 differ
+Binary files ./.git/objects/be/bc2430576aa89b77d1ca1be4c5bb7788fe91f6 and C:\Users\pc\Documents\GitHub\repository/.git/objects/be/bc2430576aa89b77d1ca1be4c5bb7788fe91f6 differ
+Binary files ./.git/objects/c1/dd12f17644411d6e840bd5a10c6ecda0175f18 and C:\Users\pc\Documents\GitHub\repository/.git/objects/c1/dd12f17644411d6e840bd5a10c6ecda0175f18 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: c6
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: c8
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: c9
+Binary files ./.git/objects/cc/50e1e9291e86352c9e9854927892f685132dfa and C:\Users\pc\Documents\GitHub\repository/.git/objects/cc/50e1e9291e86352c9e9854927892f685132dfa differ
+Binary files ./.git/objects/cc/b08d5f974c4883fe8dd01211820c4e6931841f and C:\Users\pc\Documents\GitHub\repository/.git/objects/cc/b08d5f974c4883fe8dd01211820c4e6931841f differ
+Binary files ./.git/objects/cd/8e00da1122df8dfc7d6f00f9ca735d768dd68e and C:\Users\pc\Documents\GitHub\repository/.git/objects/cd/8e00da1122df8dfc7d6f00f9ca735d768dd68e differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects/cd: f8dfb1f903df7cf2e532420d6966b09ac82c31
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: d1
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: d6
+Binary files ./.git/objects/d7/40c121f456106bb12ada57e66033487c36d2e8 and C:\Users\pc\Documents\GitHub\repository/.git/objects/d7/40c121f456106bb12ada57e66033487c36d2e8 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: d9
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: de
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: e0
+Binary files ./.git/objects/e3/5304815f110c7051781a46076173bd67cf9966 and C:\Users\pc\Documents\GitHub\repository/.git/objects/e3/5304815f110c7051781a46076173bd67cf9966 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: e5
+Binary files ./.git/objects/e6/41dbeb6ec1e2be45c4aed67bd09e636cd9278e and C:\Users\pc\Documents\GitHub\repository/.git/objects/e6/41dbeb6ec1e2be45c4aed67bd09e636cd9278e differ
+Binary files ./.git/objects/e6/527bf87cc290499cf0dc4b03f01bf67c3b24c1 and C:\Users\pc\Documents\GitHub\repository/.git/objects/e6/527bf87cc290499cf0dc4b03f01bf67c3b24c1 differ
+Binary files ./.git/objects/e6/c66de518703d9153ac810b9597ab32054bd323 and C:\Users\pc\Documents\GitHub\repository/.git/objects/e6/c66de518703d9153ac810b9597ab32054bd323 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: e7
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: ec
+Binary files ./.git/objects/ee/4d773eb61b96690a2c6d4d5bc016ad7516f646 and C:\Users\pc\Documents\GitHub\repository/.git/objects/ee/4d773eb61b96690a2c6d4d5bc016ad7516f646 differ
+Only in C:\Users\pc\Documents\GitHub\repository/.git/objects: f3
+diff -r ./.git/objects/fa/e9084692df2945e0d16e07091fa852f50d96b4 "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/objects/fa/e9084692df2945e0d16e07091fa852f50d96b4"
+1c1
+< x+)JMU0∑`040031QHÃ /-—À(…Õa0<x$‰ÃÒ˘{fw/˘±Ë[ìÚRπùPUE˘Y©%≈uìñ÷˜ùµ
+---
+> xú+)JMU0∑`040031QHÃ /-—À(…Õa0<x$‰ÃÒ˘{fw/˘±Ë[ìÚRπùPUE˘Y©%≈uìñ÷˜ùµ
+Binary files ./.git/objects/ff/9044bbf5a6423ff152d263815c1069323aba3b and C:\Users\pc\Documents\GitHub\repository/.git/objects/ff/9044bbf5a6423ff152d263815c1069323aba3b differ
+Only in ./.git/objects/pack: pack-8638575302fcffdadefba30099b3e6a4d032957e.idx
+Only in ./.git/objects/pack: pack-8638575302fcffdadefba30099b3e6a4d032957e.pack
+Only in ./.git: packed-refs
+Only in ./.git/refs/heads: atelier4-final
+diff -r ./.git/refs/heads/main "C:\\Users\\pc\\Documents\\GitHub\\repository/.git/refs/heads/main"
+1c1
+< 1747048afbfa50c7e2f833adeab497d21d2f5ca3
+---
+> 695868fb34301dbfe37616aba0b9729938ce195d
+Only in ./.git/refs/heads: master
+Only in ./.git/refs/remotes/origin: atelier3
+Only in ./.git/refs/remotes/origin: atelier4-final
+Only in C:\Users\pc\Documents\GitHub\repository/.git/refs/remotes/origin: master
+Only in .: aa.txt
