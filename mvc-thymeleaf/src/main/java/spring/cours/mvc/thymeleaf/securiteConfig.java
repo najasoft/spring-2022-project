@@ -16,43 +16,17 @@ import spring.cours.mvc.thymeleaf.services.UserService;
 @EnableWebSecurity
 public class securiteConfig extends WebSecurityConfigurerAdapter {
 
-	@Autowired
-	private UserService userService;
-
-	//@Autowired
-	//private  BCryptPasswordEncoder passwordEncoder;
-	
-
-	@Bean
-	public DaoAuthenticationProvider authenticationProvider() {
-		DaoAuthenticationProvider auth = new DaoAuthenticationProvider();
-		auth.setUserDetailsService(userService);
-		//auth.setPasswordEncoder(passwordEncoder);
-		return auth;
-
+@Autowired
+	public void configureInMemoryUsers(AuthenticationManagerBuilder auth) throws Exception {
+		auth.inMemoryAuthentication().withUser("u1").password("{noop}p1").roles("ADMIN", "USER").and().withUser("u2")
+				.password("{noop}p2").roles("USER").and().withUser("u3").password("{noop}p3").roles("USER");
+			
 	}
-	
-	
-	@Override
-	public void configure(AuthenticationManagerBuilder auth) throws Exception {
-		auth.authenticationProvider(authenticationProvider());
-	}
-	
+
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-
-		http.authorizeRequests().antMatchers("/","/register**", "/js/**,/img/**,/img/**").permitAll().anyRequest()
-				.authenticated()
-				.and()
-				.formLogin()
-				//.loginPage("/login")
-				.permitAll()
-				.and()
-				.logout()
-				//.invalidateHttpSession(true).clearAuthentication(true)
-				//.logoutRequestMatcher(new AntPathRequestMatcher("/logout")).logoutSuccessUrl("/login?logout")
-				.permitAll()
-				;
-
+		http.authorizeHttpRequests().antMatchers("/", "/register**", "/js/**,/img/**").permitAll()
+				.antMatchers("/projets**").hasRole("ADMIN").antMatchers("/mvcprojets**").hasRole("USER").anyRequest()
+				.authenticated().and().formLogin();
 	}
 }
