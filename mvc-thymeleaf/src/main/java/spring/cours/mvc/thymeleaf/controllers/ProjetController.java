@@ -14,6 +14,7 @@ import spring.cours.mvc.thymeleaf.model.Projet;
 import spring.cours.mvc.thymeleaf.model.ProjetDev;
 import spring.cours.mvc.thymeleaf.model.ProjetRes;
 import spring.cours.mvc.thymeleaf.model.Tache;
+import spring.cours.mvc.thymeleaf.repository.UserRepository;
 import spring.cours.mvc.thymeleaf.services.ProjetService;
 
 @RestController
@@ -22,6 +23,7 @@ public class ProjetController {
 
 	@Autowired
 	private ProjetService projetService;
+	private UserRepository userRepository;
 	
 	
 
@@ -39,6 +41,8 @@ public class ProjetController {
 	public void ajouter(@RequestBody ProjetRes p) {
 		projetService.ajouter(p);
 	}
+	
+
 
 	@GetMapping
 	public List<Projet> obtenirProjets() {

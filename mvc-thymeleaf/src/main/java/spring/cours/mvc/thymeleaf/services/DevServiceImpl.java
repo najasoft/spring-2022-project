@@ -3,6 +3,8 @@ package spring.cours.mvc.thymeleaf.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import spring.cours.mvc.thymeleaf.model.Developpeur;
@@ -17,7 +19,12 @@ public class DevServiceImpl implements DevService {
 	@Override
 	public void ajouter(Developpeur dev) {
 		devRepository.save(dev);
-	
+
+		Authentication auth=SecurityContextHolder.getContext().getAuthentication();
+		String username=auth.getName();
+
+
+
 	}
 
 	@Override
