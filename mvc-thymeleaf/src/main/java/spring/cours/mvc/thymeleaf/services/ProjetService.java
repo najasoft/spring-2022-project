@@ -8,7 +8,7 @@ import spring.cours.mvc.thymeleaf.model.Tache;
 
 
 public interface ProjetService {
-	public void ajouter(Projet projet);
+	public Projet ajouter(Projet projet);
 
 	public List<Projet> lesProjets();
 

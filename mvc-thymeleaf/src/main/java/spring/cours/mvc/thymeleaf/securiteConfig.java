@@ -16,27 +16,21 @@ import spring.cours.mvc.thymeleaf.services.UserService;
 @Configuration
 @EnableWebSecurity
 public class securiteConfig extends WebSecurityConfigurerAdapter {
-
 	@Autowired
 	UserService userService;
-
 	@Autowired
 	PasswordEncoder passwordEncoder;
-
 	@Bean
 	public DaoAuthenticationProvider authenticationProvider() {
 		DaoAuthenticationProvider auth = new DaoAuthenticationProvider();
 		auth.setUserDetailsService(userService);
 		auth.setPasswordEncoder(passwordEncoder);
 		return auth;
-
 	}
-
 	@Override
 	public void configure(AuthenticationManagerBuilder auth) throws Exception {
 		auth.authenticationProvider(authenticationProvider());
 	}
-
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.httpBasic().and().authorizeRequests()
@@ -57,5 +51,4 @@ public class securiteConfig extends WebSecurityConfigurerAdapter {
 	public SecurityEvaluationContextExtension securityEvaluationContextExtension() {
 		return new SecurityEvaluationContextExtension();
 	}
-
 }

@@ -31,8 +31,8 @@ public class ProjetServiceImpl implements ProjetService {
 	}
 
 	@Override
-	public void ajouter(Projet projet) {
-		projetRepository.save(projet);
+	public Projet ajouter(Projet projet) {
+		return projetRepository.save(projet);
 
 	}
 

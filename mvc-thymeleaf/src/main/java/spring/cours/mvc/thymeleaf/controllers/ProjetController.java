@@ -3,6 +3,12 @@ package spring.cours.mvc.thymeleaf.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.hateoas.EntityModel;
+import org.springframework.hateoas.Link;
+import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,8 +30,6 @@ public class ProjetController {
 	@Autowired
 	private ProjetService projetService;
 	private UserRepository userRepository;
-	
-	
 
 	@PostMapping
 	public void ajouter(@RequestBody Projet p) {
@@ -38,16 +42,41 @@ public class ProjetController {
 	}
 
 	@PostMapping("/res")
-	public void ajouter(@RequestBody ProjetRes p) {
-		projetService.ajouter(p);
-	}
-	
+	public ResponseEntity<EntityModel<Projet>> ajouter(@RequestBody ProjetRes p, BindingResult result) {
+		if (!result.hasErrors()) {
 
+			Projet projet = projetService.ajouter(p);
+			EntityModel<Projet> ress = EntityModel.of(projet);
+
+			if (p != null) {
+				return new ResponseEntity<>(ress, HttpStatus.CREATED);
+
+			}
+			System.out.println("ERREUR");
+			return ResponseEntity.badRequest().build();
+		}
+		return ResponseEntity.badRequest().build();
+	}
 
 	@GetMapping
-	public List<Projet> obtenirProjets() {
-		return projetService.lesProjets();
+	public ResponseEntity<List<Projet>> obtenirProjets() {
+		return ResponseEntity.ok(projetService.lesProjets());
+	}
 
+	@GetMapping("{id}")
+	public ResponseEntity<EntityModel<Projet>> obtenirProjets(@PathVariable long id) {
+		Projet projet = projetService.getProjet(id);
+
+		if (projet != null) {
+			EntityModel<Projet> ressourceProjet = EntityModel.of(projet);
+			Link lien = WebMvcLinkBuilder.linkTo(WebMvcLinkBuilder.methodOn(this.getClass()).obtenirProjets())
+					.withRel("les projets");
+			Link selfLink = WebMvcLinkBuilder.linkTo((this.getClass())).slash(id).withSelfRel();
+			ressourceProjet.add(lien);
+			ressourceProjet.add(selfLink);
+			return new ResponseEntity<>(ressourceProjet, HttpStatus.OK);
+		}
+		return ResponseEntity.notFound().build();
 	}
 
 	@PostMapping("/{idProjet}/tache")
